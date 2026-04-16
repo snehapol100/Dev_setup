@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GIS Web Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw/dist/leaflet.draw.css"/>
+</head>
+
+<body>
+
+<div id="sidebar">
+    <h3>Filters</h3>
+    <input type="checkbox" id="hospital" checked> Hospitals<br>
+    <input type="checkbox" id="park" checked> Parks<br>
+
+    <h3>Search</h3>
+    <input type="text" id="searchBox" placeholder="Search location">
+    <button onclick="searchLocation()">Search</button>
+
+    <h3>Tools</h3>
+    <button onclick="enableDistance()">Distance Tool</button>
+</div>
+
+<div id="map"></div>
+
+<!-- JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/leaflet-draw/dist/leaflet.draw.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
